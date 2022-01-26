@@ -50,5 +50,6 @@ public class Quiz08 extends HttpServlet {
 		
 		out.print("</body></html>");
 		out.close();
+		
 	}
 }
