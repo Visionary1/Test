@@ -31,12 +31,12 @@ a:hover {
 <body>
 	<div class="container-fluid">
 		<!-- header -->
-		<header class="text-center">SK Broadband IPTV</header>
+		<header class="text-center text-danger display-6">SK Broadband IPTV</header>
 
 		<!-- nav -->
 		<div class="bg-danger mt-2">
 			<ul class="nav nav-fill">
-				<li class="nav-item"><a class="nav-link text-white p"
+				<li class="nav-item"><a class="nav-link text-white"
 					href="?page=all">전체</a></li>
 				<li class="nav-item"><a class="nav-link text-white"
 					href="?page=local">지상파</a></li>

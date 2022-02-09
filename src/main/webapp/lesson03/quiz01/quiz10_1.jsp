@@ -5,23 +5,6 @@
 
 
 <%
-String pageData = request.getParameter("page");
-
-if (pageData == null) {
-	pageData = "all";
-}
-
-Map<String, String> reference = new HashMap<String, String>();
-
-reference.put("all", "전체");
-reference.put("local", "지상파");
-reference.put("tvseries", "드라마");
-reference.put("entertainment", "예능");
-reference.put("films", "영화");
-reference.put("sports", "스포츠");
-
-String category = reference.get(pageData);
-
 List<Map<String, String>> list = new ArrayList<>();
 Map<String, String> map = new HashMap<String, String>() {
 	{
@@ -167,6 +150,22 @@ list.add(map);
 	</thead>
 	<tbody>
 		<%
+		Map<String, String> reference = new HashMap<String, String>();
+
+		reference.put("all", "전체");
+		reference.put("local", "지상파");
+		reference.put("tvseries", "드라마");
+		reference.put("entertainment", "예능");
+		reference.put("films", "영화");
+		reference.put("sports", "스포츠");
+
+		String pageData = request.getParameter("page");
+		if (pageData == null) {
+			pageData = "all";
+		}
+		
+		String category = reference.get(pageData);
+
 		for (Map<String, String> item : list) {
 			if (item.get("category").equals(category) || category == "전체") {
 		%>
