@@ -20,9 +20,9 @@
 				</ul>
 
 				<!-- 곡 검색하기 -->
-				<form class="d-flex">
+				<form class="d-flex" action="./info_template.jsp">
 					<!-- song 파라미터 넘기기 -->
-					<input name="song" class="form-control me-2" type="text" placeholder="곡 제목" aria-label="Search">
+					<input name="search" class="form-control me-2" type="text" placeholder="곡 제목" aria-label="Search">
 					<button class="btn btn-outline-success text-nowrap" type="submit">검색</button>
 				</form>
 			</div>
