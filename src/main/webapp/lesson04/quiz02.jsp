@@ -20,7 +20,7 @@ id 를 기준으로 내림차순으로 출력하세요.
 url 내용을 a 태그를 이용해서 연결이 되도록 하세요. -->
 
 <div class="container">
-	<table class="table">
+	<table class="table text-center">
 		<thread>
 		<tr>
 			<th>사이트</th>
@@ -39,7 +39,7 @@ url 내용을 a 태그를 이용해서 연결이 되도록 하세요. -->
 			<tr>
 				<td><%=result.getString("name")%></td>
 				<td><a href="<%=result.getString("url")%>"><%=result.getString("url")%></a></td>
-				<td><a href="/lesson04/quiz02_del?id=<%= result.getInt("id")%>">삭제하기</a></td>
+				<td><a href="/lesson04/quiz02_del?id=<%= result.getInt("id")%>" class="btn btn-danger">삭제하기</a></td>
 			</tr>
 			<%
 			}
